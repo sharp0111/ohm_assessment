@@ -9,7 +9,7 @@ def connectTo(instanceName):
 
     connInfo = getConnection(instanceName)
     conn = mysql.connector.connect(host=connInfo['host'], user=connInfo['user'], passwd=connInfo['password'],
-                                   db=connInfo['database'], port=connInfo['port'], converter_class=OhmMySQLConverter)
+                                   db=connInfo['database'], port=connInfo['port'], auth_plugin='mysql_native_password', converter_class=OhmMySQLConverter)
     return conn
 
 
