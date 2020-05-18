@@ -23,6 +23,7 @@ funcsigs==0.4
 futures==3.0.3
 Jinja2==2.8
 lea==2.2.0
+mysql-connector-python==8.0.20
 mysql-connector-python-rf==2.0.4
 mock==1.0.1
 pep8==1.6.2
