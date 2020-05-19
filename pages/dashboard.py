@@ -8,7 +8,7 @@ from models import User
 @app.route('/dashboard', methods=['GET'])
 def dashboard():
 
-    # login_user(User.query.get(1))
+    login_user(User.query.get(1))
 
     args = {
         'gift_card_eligible': True,
