@@ -7,16 +7,15 @@ Create Date: 2020-05-18 13:05:04.615771
 """
 
 # revision identifiers, used by Alembic.
+import sqlalchemy as sa
+from alembic import op
 revision = 'ab7fb1ae4bb'
 down_revision = '00000000'
-
-from alembic import op
-import sqlalchemy as sa
 
 
 def upgrade():
     op.execute('''UPDATE user
-                    SET point_balance=0
+                    SET point_balance=5000
                     WHERE user_id=1
     ''')
 
